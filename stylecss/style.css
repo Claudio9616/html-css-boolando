@@ -12,6 +12,7 @@ header{
     top: 0;
     background-color: orange;
     width: 100%;
+    z-index: 1;
 }
 .container-header{
     display: flex;
@@ -43,13 +44,18 @@ img{
     max-width: 100%;
     display: block;
 }
+.img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 .row{
     display: flex;
     gap: 10px;
 }
 .col{
     flex-basis: calc(100% / 3);
-    border: 1px solid black;
 }
 .card{
     position: relative;
@@ -69,13 +75,12 @@ img{
     padding: 5px;
     color: white;
 }
-.heart{
+.black{
     background-color: white;
     padding: 10px;
     position: absolute;
     top: 7px;
     right: 0;
-    color: red;
 }
 .discount-price{
     display: inline-block;
@@ -84,4 +89,19 @@ img{
 .original-price{
     display: inline-block;
     text-decoration: line-through;
+}
+.card:hover .img-hover{
+    display: inline-block;
+}
+.black:hover .heart{
+    display: inline-block;
+    color: red;
+}
+.text-single{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    background-color: green;
+    padding: 5px;
+    color: white;
 }
