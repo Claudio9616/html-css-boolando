@@ -1,3 +1,87 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: brown;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    background-color: orange;
+    width: 100%;
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 75%;
+    min-height: 80px;
+}
+.container{
+    max-width: 1200px;
+}
+.container-header > *{
+    flex-basis: 20%;
+    padding: 10px 0;
+}
+li{
+    display: inline;
+    font-weight: 800;
+    color: white;
+}
+.img-logo{
+    flex-grow: 1;
+    text-align: center;
+}
+#logo{
+    width: 200px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+.col{
+    flex-basis: calc(100% / 3);
+    border: 1px solid black;
+}
+.card{
+    position: relative;
+}
+.discount{
+    position: absolute;
+    bottom: 100px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+}
+.text{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    background-color: green;
+    padding: 5px;
+    color: white;
+}
+.heart{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    color: red;
+}
+.discount-price{
+    display: inline-block;
+    color: red;
+}
+.original-price{
+    display: inline-block;
+    text-decoration: line-through;
 }
