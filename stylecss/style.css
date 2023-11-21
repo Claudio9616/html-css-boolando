@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    padding-top: 100px;
+    padding-top: 120px;
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
@@ -28,6 +28,9 @@ header{
     flex-basis: 20%;
     padding: 10px 0;
 }
+.icon{
+    padding-left: 185px
+}
 li{
     display: inline;
     font-weight: 800;
@@ -39,6 +42,9 @@ li{
 }
 #logo{
     width: 200px;
+}
+.container-main{
+    padding-bottom: 30px;
 }
 img{
     max-width: 100%;
@@ -53,6 +59,7 @@ img{
 .row{
     display: flex;
     gap: 10px;
+    padding-bottom: 30px
 }
 .col{
     flex-basis: calc(100% / 3);
@@ -104,4 +111,29 @@ img{
     background-color: green;
     padding: 5px;
     color: white;
+}
+.container-footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+.main-footer{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-footer{
+    margin-right: 450px;
+}
+.text-footer > div{
+    font-weight: 800;
+}
+.asd{
+    font-weight: normal;
+}
+.social > div{
+    font-weight: 800;
 }
